@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blog</title>
+	<meta charset="utf-8"/>
+	{%load staticfiles %}
+	<link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}" type="text/css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		h2{
+			text-align: left;
+			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		}
+
+	</style>
+
+	</head>
+	<body class="body" style="background-color:#ff7777">
+	
+	<div>
+	{% block content %}
+	{% endblock %}
+	</div>
+</body>
+</html>
